@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classe</title>
+    <style>
+        div{
+            background-color: lightgray;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;     
+            display: inline-block;   
+        }
+        div:hover{
+            background-color: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="d1">1</div>
+    <div id="d2">2</div>
+    <div id="d3">3</div>
+    <br>
+    <a href="hover.html" style="font-family: 'Courier New', Courier, monospace; color: blue; text-decoration: none;" >Exemplo do Hover</a>
+    <br>
+
+    <a href="links.html" style="font-family: 'Courier New', Courier, monospace; color: blue; text-decoration: none;">Pseudo-elementos </a>
+
+<br>
+<br>
+<hr>
+<h1 style="text-align: center;">Anotações</h1>
+
+<pre>
+    📝 Pseudo-classes em CSS 📝
+    
+    Representadas por	:
+    
+      ex: 	<strong>
+          :active	:checked	:enabled	   :disabled	:corner-present
+                    :empty	:end		:first	   :hover	        :double-button
+      </strong>
+    
+    <strong><code>:hover</code></strong>	->	quando passa o mouse por cima acontece algo
+    
+        <strong>
+            <code>
+                ex:	div:hover {
+                                background-color: yellow;
+                            }
+            </code>
+        </strong>
+    
+    <strong><code>div > p</code></strong>	-> parágrafo que está dentro da div (p é filho de div)
+    
+    Deixar texto de "p" invisível:
+    
+        <strong>
+            <code>
+                div > p {
+                   display: none;
+                }
+            </code>
+        </strong>
+    
+    Deixar texto de "p" visível quando passar o mouse em cima:
+      (útil para criar menu)
+    
+        <strong>
+            <code>
+                div:hover > p {
+                        display: block;
+                }
+            </code>
+        </strong>
+    
+    <strong>&lt;div&gt;</strong>	->	é um espaço qualquer
+    
+    <strong>height</strong>	->	altura
+    
+     <strong>width</strong>	->	largura
+    
+    <strong>border</strong>	->	borda		ex:	border: 1px solid black; (shorthand)
+    
+    <strong>display: inline-block;</strong> 	->	 tudo na mesma linha
+</pre>
+    
+</body>
+</html>

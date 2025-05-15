@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1#principal {
+            background-color: blue;
+            height: 300px;
+            width: 300px;
+
+
+            border: 10px solid darkcyan;
+
+            padding: 10px;
+
+            margin: 20px auto 20px auto;
+
+            outline: 5px dashed salmon;
+
+        
+
+        }
+        a{
+            border: 10px solid brown;
+
+            padding: 5px;
+
+            
+          
+
+
+
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1 id="principal">Exemplo de caixa Box-level</h1>
+    <p>Parágrafos também são exemplo de box-level, mas os <a href="#">links são exemplo de caixas inline-level</a>. Vamos ver como tudo isso funciona .</p>
+
+    <a href ="caixa02.html" style="text-decoration: none;">Próxima página</a>
+    <br>
+    <br>
+    <hr>
+    <h1 style="text-align: center;">Anotaçoes </h1>
+        <p>
+           
+            <pre style="font-family: Arial, Helvetica, sans-serif; font-size: 8px;">
+                <span style="font-size: 15px;">
+          📝 REVISÃO
+                    
+          Propriedades de borda:
+                </span>
+                
+                   largura	->	<strong>border-width: 10px;</strong>
+                
+                   estilo	->	<strong>
+                       border-style: solid;	 (sólida)
+                                             : dashed;	 (tracejada)
+                                             : dotted;	 (pontilhada)
+                                             : double;	 (dupla)
+                                             : groove;	 (em 3d)
+                   </strong>
+                
+                   cor 	->	<strong>border-color: red;</strong>
+                
+                  - Shorthand:
+                
+                    <strong>border: 10px solid red (largura, estilo, cor)</strong>
+                
+                
+                Propriedades de padding:
+                
+                    <strong>
+                        padding-top: 10px;	   (de topo)
+                        padding-right: 10px;	   (à direita)
+                        padding-bottom: 10px    (de baixo)
+                        padding-left: 10px;	   (à esquerda)
+                    </strong>
+                
+                  - Shorthand:
+                <strong>
+                    
+                        padding: 15px 10px 15px 10px;    (sent. horário: top, right, bottom, left)
+                        padding: 10px; 		(os 4 lados iguais a 10px)
+                        padding: 15px 10px;	 (cima e baixo 15px / esquerda e direita 10px)
+                </strong>
+                
+                
+                Acessar DevTools do Chrome: botão direito no corpo do site -> inspecionar
+                
+                box-level = block-level
+            </pre></p>
+
+            a
+
+        <br>
+        <br>
+    <p> <pre style="font-family: Arial, Helvetica, sans-serif; font-size: 8px;">
+            <strong><span style="font-size: 10px;">PROPRIEDADES DE ESTILO DE CADA PARTE ANATÔMICA DE UMA CAIXA:</span></strong>
+            <br>
+            PROPRIEDADES - MARGIN: As principais Propriedades de Estilo para <strong>margin</strong> são: " <strong>margin-top</strong> " (margin da parte de cima de um elemento), " <strong>margin-right</strong> " (parte direita), " <strong>margin-bottom</strong> " (parte de baixo) e " <strong>margin-left</strong> " (parte esquerda) - O valor dessas propriedades geralmente é inserido em px.
+            <br>
+        
+            Nota: Para centralizar um elemento (CAIXA) na tela, de forma automática , devemos usar a Propriedade de Estilo " <strong>margin</strong> " com o valor " <strong>auto</strong> ". Isso fará com que elementos (caixas) sejam centralizados horizontalmente de forma automática, mesmo que o tamanho da tela mude.
+            <br>
+        
+            Como no "<strong>padding</strong>", também existe um SENTIDO/ORDEM correta PARA INSERIR as propriedades de margin descritas logo acima. A "direção" correta é:
+        
+            1) - Top
+            2) - Right
+            3) - Bottom
+            4) - left
+            <br>
+        
+            Exemplo:
+            <br>
+        
+            <code>
+                margin-top: 10px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                margin-left: 10px;
+            </code>
+            <br>
+        
+            É importante declarar nessa ordem, pois é necessário ser condizente com a direção e sentido padrão do Modelo de Caixas do DevTools , que segue a direção de um ponteiro de relógio.
+            <br>
+        
+            Também podemos utilizar uma Shorthand para inserir e simplificar todas essas declarações de margin em uma única linha, exemplo: " <code>margin: 15px 10px 10px 15px;</code> "
+            <br>
+        
+            OBSERVAÇÃO: Mesmo em shorthands como a do exemplo acima, os valores devem ser declarados na ordem orientada ( top, right, bottom e left ), para que consigamos nos nortear e especificar corretamente o espaçamento certo o para respectivo lado/sentido.
+            <br>
+        
+            Se quisermos configurar os quatro lados do margin de uma só vez e constituir um margin igualitário (mesmo valor nos quatro lados), podemos simplesmente inserir uma única vez a Propriedade "margin" com o valor em px desejado, esse valor será inserido nos quatro lados do elemento automaticamente , exemplo: " <code>margin: 10px;</code> "
+            <br>
+        
+            IMPORTANTE : Se quisermos centralizar um elemento (CAIXA) de forma automática, mas ainda assim , alterar o margin do sentido de cima (top) ou de baixo (bottom), devemos inserir a seguinte declaração shorthand: " <code>margin: 10px auto 10px auto;</code> "
+            <br>
+        
+            Também podemos colocar só dois valores em uma propriedade <strong>margin</strong>, exemplo: " <code>margin: 10px 20px;</code> " - Quando colocamos somente dois valores, significa que os sentidos de CIMA E DE BAIXO são representados pelo primeiro valor e os sentidos de ESQUERDA E DIREITA são representados pelo segundo valor.
+            <br>
+        
+            PROPRIEDADES - OUTLINE: As principais Propriedades de Estilo para outline são: <strong>" outline-width " (espessura da outline), " outline-style " (estilo da outline) e " outline-color " (cor da outline).</strong>
+            <br>
+        
+            Os valores mais utilizados para a Propriedade de Estilo que define o estilo de uma outline (outline-style), são: " <strong>solid</strong> " (linha sólida), " <strong>dashed</strong> " (outline tracejada), " <strong>dotted</strong> " (outline pontilhada), " <strong>double</strong> " (linha dupla) e o " <strong>groove</strong> " (outline "3d")
+            <br>
+        
+            Sendo que podemos utilizar uma shorthand para inserir e simplificar todas essas declarações de outline em uma única linha, exemplo: " <code> outline: 10px solid black; </code> " (Siga a ordem de inserção de valores do exemplo na hora de usar uma shorthand, caso contrário não funcionará corretamente)
+    </pre></p>
+    
+</body> 
+</html>

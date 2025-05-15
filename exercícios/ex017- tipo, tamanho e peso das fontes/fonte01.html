@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+    body {
+        font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+        /*Medidas absolutas
+        cm, mm, in, px, pt, pc
+
+        Medidas relativas
+        em, ex , rem, vw, vh, %
+        16px = 1em
+        */
+        font-size: 1em;
+
+        /*lighter normal bold bolder*/
+
+        }
+        h1 {
+            /*shorthand font
+            -font-style -> font-weight -> font-size -> font-family (exatamente nesta ordem) 
+            font-family:'Work Sans, sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-family: italic; */
+
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+        h2{
+            font: bold 2em 'Work Sans';
+        }
+        
+
+
+    
+</style>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non tempore soluta repellat possimus cupiditate dolorem obcaecati, hic incidunt, pariatur dignissimos accusantium ab illum odio veniam. In doloremque tempore sunt ducimus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente error doloremque excepturi aut nesciunt inventore. Veritatis modi fugiat similique iste quae laborum deleniti rem dolorem excepturi, molestiae earum magni enim?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, suscipit voluptate! Et, officia animi velit minima hic repudiandae, corporis accusamus sequi fugiat unde deleniti iste natus quam voluptatibus ad expedita! </p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quo, sit eos rem iste alias in iure ab nostrum dolorum minus dicta dolores expedita, aspernatur praesentium doloremque deleniti laudantium itaque?</p>
+    <hr>
+    <h1 style="text-align: center;">ANOTAÇOES</h1>
+    <br>
+    <br>
+    <br>
+    <h2>TIPOS DE FONTE</h2>
+    <p><strong><ul>
+        <li style="font-family: 'Times New Roman', Times, serif;">Fontes serifadas (com serifa, usada em textos no papel)</li>
+        <li style="font-family: Arial, Helvetica, sans-serif;">Fonte sans-serif (sem serifa, usada em textos na tela)</li>
+        <li style="font-family: 'Courier New', Courier, monospace;">Monoespaçadas (mesmo tamanho de corpo e espaçamento)</li>
+        <li style="font-family: 'Caveat', cursive, sans-serif;"> Handwriting (semelhança a uma escrita a mao) </li>
+        <li style="font-family: 'Creepster',sans-serif;"> Fontes comemorativas (retiradas de filmes, jogos , etc) </li>
+    </ul></strong></p>
+    <br>
+    <br>
+    <p>OBS: Sempre terminar o a linha com uma fonte genérica <code>(serif, sans-serif, monoespaçada)</code> devido a incompatibilidade de alguns dispositivos. Exemplo:</p>
+    <br>
+    <code>font-family: Arial, Helvetica, sans-serif;</code>
+    <p>No exemplo acima, primeiro em ordem será aplicada a fonte <i>Arial</i>, caso nao seja compatível será aplicada a <i>Helvetica</i> e o <i>sans-serif</i> no final (fonte genérica), indicando uma fonte sem serifa. 
+    </p>
+    <h2>TAMANHO DAS FONTES</h2>
+    <UL><strong> MEDIDAS ABSOLUTAS</strong>
+        <LI>cm (centímetro)</LI>
+        <li>mm (milímetro)</li>
+        <li>in (polegada)</li>
+        <li> px (píxel) <strong><small>adequada a ser usada</small></strong></li>
+        <li>pt (ponto)</li>
+    </UL>
+<br>
+<ul><strong>MEDIDAS RELATIVAS</strong>
+    <li>em (medida) <strong><small>adequada a ser usada</small></strong></li>
+    <li>ex (altura-x)</li>
+    <li>rem (root)</li>
+    <li>vw (view width)</li>
+    <li>vh (view altura)</li>
+    <li>% (porcentagem)</li>
+</ul>
+OBS: <strong>16px = 1em</strong>
+<br>
+<br>
+<h2>PESO DAS FONTES</h2>
+<p><code>font-weight= peso da fonte (classificada em lighter, normal, bold, bolder)</code></p>
+<p><code>font-style= <i>normal ou itálico</i></code></p>
+<p style="text-decoration: underline;"><code> text-decoration= underline (texto sublinhado)</code></p>   
+<br>
+OBS: Podemos simplificar o código usando apenas uma linha, chamada propriedade <i>shorthand</i>. Seguindo exatamente a ordem: <code>font-style -> font-weight -> font-size -> font-family</code>. Exemplo:
+<p style="text-align: center;"><strong>CÓDIGO NORMAL</strong> </p>
+<pre><code>
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+    font-style: italic;
+
+</code></pre>
+<br>
+<p style="text-align: center;"><strong>CÓDIGO COM SHORTHAND</strong></p>
+<code>Font: italic bolder 3em 'Work Sans', sans-serif;</code>
+
+</body>
+</html>

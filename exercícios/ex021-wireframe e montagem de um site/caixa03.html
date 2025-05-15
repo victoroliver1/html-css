@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa Personalizada</title>
+    <style>
+        h1{
+            border: 20px solid black;
+            padding: 12px;
+            border-image-source: url('borda.png');
+            border-image-slice: 27;
+            border-image-repeat: repeat;
+  /* shorthand border-image-repeat: url('borda.png') 27 repeat; */ 
+ }
+
+    </style>
+</head>
+<body>
+    <h1>Teste de Borda</h1>
+    <a href="caixa02.html" style="text-decoration: none;">Voltar </a>
+    <br>
+    <a href="caixa01.html" style="text-decoration: none;">Início </a>
+    <hr>
+    <h2 style="text-align: center;">Anotaçoes</h2>
+    <p>Podemos criar uma borda personalizada através do <code>border-image-source: url('borda.png')</code> onde selecionamos entre nos parentenses o local da borda.</p>
+    <p><code>border-image-slice</code> -> Espaçar/ espalhar a borda. Valores apartir de 0. (Exemplo: <code>border-image-slice: 27;</code>) </p>
+    <p><code>border-image-repeat: repeat </code> --> Repetir continuamente a borda.</p>
+    <br>
+    <p>Podemos criar um shorthand em uma única linha de código. Seguindo a ordem <code>border-image-source, border-image-slice, border-image-repeat.</code> Exemplo: <code>border-image: url('borda.png') 27 repeat; </code> </p>
+
+    
+</body>
+</html>

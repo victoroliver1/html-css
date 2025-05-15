@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos Locais / Internos</title>
+    <style>
+        body{
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        h1{
+            color: darkblue;
+            background-color: lightskyblue;
+        }
+        h2{
+            color: darkred;
+        }
+        p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body >
+    <h1>Capitulo1</h1>
+    <h2 >Capitulo1.1</h2>
+    <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, quas! Omnis cumque unde soluta quae facere. Ipsam illum voluptatem, reprehenderit libero fuga placeat tempora porro cumque autem voluptate maxime quos?</p>
+    <h2 >Capitulo1.2</h2>
+    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, est? Accusamus laudantium iure, at nesciunt nostrum perferendis recusandae, impedit sint voluptate numquam dolorem a. Rem, inventore sed? Similique, quae beatae!</p>
+    <h1 >Capitulo2</h1>
+    <h2 >Capitulo2.1</h2>
+    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sunt ut itaque at repudiandae possimus temporibus! Cum deleniti explicabo natus maxime deserunt non facilis minus illum, fuga totam facere nostrum?</p>
+<br>
+<br>
+<hr><h1 style="text-align: center;">ANOTAÇOES</h1>
+<p><strong>OBS: Podemos através dos estilos internos organizar e facilitar o estilo do site de forma mais organizada. Pra isso abrimos uma tag &lt;style&gt; dentro da <i>Head</i> abaixo do <i>tittle</i> e ao invés de abrir tags com &lt;&gt;, abrimos com {}. Uma vez aplicado o estilo em uma tag, será aplicada a todas as tags da página. Exemplo do código do texto acima.</strong></p>
+<br><pre>
+    <code>
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title>Estilos Locais / Internos&lt;/title&gt;
+            &lt;style&gt;
+                body{
+                    background-color: lightblue;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 20px;
+                }
+                h1{
+                    color: darkblue;
+                    background-color: lightskyblue;
+                }
+                h2{
+                    color: darkred;
+                }
+                p{
+                    text-align: justify;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+    
+    
+        &lt;/body&gt;
+    </code>
+</pre>
+<br>
+<br>
+<p><strong>Como exemplo no:</strong> <pre>
+    <code>
+        p{
+            text-align: justify;
+        }
+    </code>
+</pre> <strong>todas as tags &lt;p&gt;, estarão com o texto alinhado(text-align: justify), assim como as demais tags aplicando o estilo no <i>head</i>, chamado de estilos internos ou locais. </strong></p>
+</html>

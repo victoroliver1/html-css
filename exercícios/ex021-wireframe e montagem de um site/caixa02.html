@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+</head>
+       <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+        }
+
+        article{
+            background-color: lightgray;
+        }
+
+        article > aside{
+            background-color: rgb(165, 165, 165);
+            padding: 5px;
+
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            background-color: white;
+            border-radius: 50%;
+
+
+        }
+        pre{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+       </style>
+<body>
+    
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Política Esportes Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias do Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quaerat vero quam fugit, ea voluptas harum, quibusdam, aut expedita natus voluptate quasi quae nulla nobis labore id numquam quod incidunt.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por CursoemVideo</p>
+    </footer>
+    <div id="bola"></div>
+    <a href="caixa03.html" style="text-decoration: none;">Próxima página</a>
+    <br><br><hr>
+    <h2 style="text-align: center;">Anotaçoes</h2>
+
+    <pre>
+        <P style="font-family: Arial, Helvetica, sans-serif;">
+            <span style="font-weight: bolder; font-size: 1.2em;">📝 Tags de agrupamento (grouping tags):</span>
+            - Sem valor semântico:
+        
+               &LT;div&gt;		-> block
+               &LT;span&gt;	-> inline
+        
+            - Com valor semântico:
+        
+              &LT;header&gt;		-> cabeçalho
+                   &LT;nav&gt;	        -> para menus, links, navegação
+        
+             &LT;main&gt;			       -> principal
+               &LT;section&gt;		       -> seção
+                 &LT;article&gt;	       -> artigo
+                     &LT;aside&gt;	       -> periférico ao artigo (ex: escritor / autor)
+        
+             &LT;footer&gt;	               -> rodapé</P>
+    </pre>
+    <br>
+    <p><strong>Box-Shadow -> Sombra da caixa</strong> ('shorthand' <code>box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);</code> respectivamente, sombreamento horizontal, vertical, espalhamento e cor)</p>
+<pre style="font-family: Arial, Helvetica, sans-serif;">
+        <p>Sempre usar <strong>Box-shadow -> Black</strong> (cor preta)</p>
+        Pra quem não quiser sofrer com erro de margins e paddings excessivos na página, só criar em todo projeto um:
+            * {
+                 margin: 0;
+                 padding: 0;
+                 border: 0;
+            }
+
+            OBS: <STRONG>*</STRONG> -> elemento universal
+    </pre>
+
+    <pre>
+        <p style="margin: 0px;">
+            Podemos criar caixas com pontas arredondadas, caixas com vértices arredondados... Para fazer isso utilizamos a Propriedade de Estilo " <strong>border-radius</strong> ".
+        
+
+        
+            Também podemos utilizar uma SHORTHAND para inserir e simplificar todas essas declarações de border-radius em uma única linha, exemplo: " <strong>border-radius: 15px 10px 15px 10px;</strong> "
+        
+        
+            NOTA: O design prima pela discrição, então cuidado para não exagerar ao utilizar bordas arredondadas.
+        
+            Quando temos um elemento na forma QUADRADA, uma <div> com altura e largura de 100px por exemplo, podemos transformar esses elementos quadrados em um círculo/bola com a Propriedade de Estilo " <strong>border-radius </strong>" com o valor " <strong>50%</strong> " ou " <strong>100px </strong>".
+        </p>
+    </pre>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonte Externas</title>
+</head>
+<style>
+    @font-face {
+        font-family: 'Love larry'  ;
+        src: url(fonts/love\ larry\ ttf.ttf) format('truetype');
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h1{
+        font-family: 'Love larry', Times, serif;
+        font-size: 3em;
+        font-weight: normal;
+
+    }
+</style>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, iste suscipit. Voluptatibus dignissimos similique eos temporibus, vitae fuga natus dolorum impedit laboriosam quidem voluptas repudiandae quam omnis delectus commodi iusto?</p>
+    <hr>
+    <h2 style="text-align: center;"><strong>ANOTAÇOES</strong></h2>
+
+    <h3>Adicionando Fontes Externas</h3>
+    <p>1º passo é baixar a fonte e colar dentro da pasta do  vscode (recomendado criar uma pasta <i>font</i>)</p>
+    <p>2º passo é adicionar o seguinte código dentro da tag &lt;style&gt;: 
+        <br><pre>
+             <code>
+                @font-face {
+                    font-family: 'nome da fonte'  ;
+                    src: url(caminho da fonte) format('nome do formato');
+                }
+            </code>
+        </pre>
+    </p>
+    <p><strong>OBS</strong>: <li>Deixar sempre entre parenteses o 'nome da fonte' e 'nome do formato'</li>
+    <li>As fontes geralmente virão em formato opentype(otf) e truetype(ttf) que são compatíveis com todos os navegadores e dispositivos.</p></li>
+    <p><strong>Exemplo de código</strong>:
+        <pre>
+            <code>
+                @font-face {
+                    font-family: 'Love larry'  ;
+                    src: url(fonts/love\ larry\ ttf.ttf) format('truetype');
+                }
+            </code>
+        </pre>
+    </p>
+    <p><li>Usar a extensão FontsNinja para identificar qualquer fonte de qualquer site.</li></p>
+    
+</body>
+</html>

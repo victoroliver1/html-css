@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitHub</a></p>
+    <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external"> 
+        <p>Você tabmém pode acessar o meu canal gratuito no YouTube</p>
+    </a>
+
+    <p><strong>OBS: Para utilizar links externos basta adicionar a tag &lt;a&gt; e dentro do <code>href</code> adicionar a URL completo para qual deseja o redirecionamento do link. De extrema importância utilizar o parâmetro </strong><code>target="_blank" rel="external"</code> dentro da tag &lt;a&gt; <strong>para que o site externo seja redicionado para outra aba. Por exemplo:</strong>
+        
+        
+        <code><pre>&lt;a href="URL DO SITE" target="_blank" rel="external&gt;"</pre></code>
+
+<h1>Usando Links Internos</h1>
+<p>Esa é a primeira página do site.Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">Segunda página</a></p>        
+
+<p>Você tambem pode acessar a nossa <a href="noticias/pag003.html" rel="next">página de noticias</a></p>
+
+<p><strong>OBS: Para utilizar links internos, basta criar uma novo arquivo html dentro do VSCODE e adicionar a tag </strong><code>&lt;a href="nome do arquivo criado" rel="next"&gt</code> <strong>que ao clicar será redirecioado para a página seguinte (podemos utilizar o comando CRTL+ESPAÇO ou / para selecionar o arquivo). Acesse a observação da página 002 </strong><a href="pag002.html" rel="next">aqui.</a> </p>
+
+<h1>Links para download</h1>
+
+<ul>
+    <li><a href="livro/meulivro.pdf" download="meulivro.pdf">Baixar o livro em pdf</a></li>
+    <li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">Livro compactado em ZIP</a></li>
+</ul>
+
+<p><strong>OBS: Para adicionar um link para download basta criar uma lista usando a tag &lt;ul&gt; e dentro da tag &lt;li&gt; adicionar a tag &lt;a&gt; com os seguintes parâmentros:</strong> <code>&lt;a href="local onde está o arquivo" download="nome do arquivo" type="application/tipo do arquivo"&gt;</code>.<strong>Se o arquivo for em pdf por exemplo o parâmetro ficaria:</strong> <code>application/pdf</code>.<strong> O "application" para cada tipo de arquivo pode ser encontrado no site <a href="https://www.iana.org/assignments/media-types/" target="_blank" rel="external">https://www.iana.org/assignments/media-types/</a>.</strong></p>
+
+    
+</body>
+</html>

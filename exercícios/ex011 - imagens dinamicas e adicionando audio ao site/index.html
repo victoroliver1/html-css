@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTLM5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px  )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <br>
+   <br>
+   <hr><h1 style="text-align: center;">ANOTAÇOES</h1>
+
+    <p><strong>OBS:Primeiro criamos 3 imagems: 300x300(dispositivos celulares), 700x700(tablets) e 1000x1000(computadores e tv's). A tag &lt;picture&gt; permite criar vários <code>source</code> dentro dela. Devemos sempre começar da imagem maior para menor ou menor para maior esta ordem deve ser sempre obedecida. Nesse exemplo selecionamos imagem maior primeiro através da tag &lt;img&gt;dentro da &lt;picture&gt;. Depois abrimos uma tag &lt;source media type&gt; a cima da &lt;img&gt;. Mudamos de "min-width para max-width" e colocamos 1050px(tamanho max para abrir a imagem grande, sempre colocar 50px a mais).No "srcset" selecionamos o local da foto média (700x700). Nesse caso o código ficou:</strong> <code>&lt;source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png" </code>.</p>
+
+    <p><strong>Para o mesmo fazemos na foto pequena, abrimos a tag &lt;source media type&gt; a cima da média, mudamos de min-width para max-width 750(sempre adicionar 50px a mais) e no "srcset" selecionamos o local da imagem pequena (nao pega comando tem que digitar o local manualmente). E assim ficou o código:</strong> <code> &lt;source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"&gt;</code></p>
+
+    <p><strong>Assim no navegador, a medida que vamos diminuindo/aumentado as imagens vao sendo alteradas. Código final</strong>: <pre>
+        <code>
+            &lt;picture&gt;
+                &lt;source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"&gt;
+                &lt;source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"&gt;
+                &lt;img src="imagens/foto-g.png" alt="imagem flexível"&gt;
+            &lt;/picture&gt;</p>
+        </code>
+    </pre>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5</p>
+    <audio src="midia/ArtBat- Breathe In.mp3" controls autoplay></audio>
+
+    <p>OBS: <strong>Para adicionar audios a seu site, basta adicionar a tag &lt;audio&gt; no <code>src</code> escolher o local do arquivo e adicionar os parâmetros <code>controls autoplay</code>. Ainda sobre parâmentros, o <code>loop</code> reproduzirá o audio eternamente.</strong>. Exemplo:  <code>&lt;audio src="midia/ArtBat- Breathe In.mp3" controls autoplay&gt;&lt;/audio&gt;</code>.
+    </p>
+
+    <p><strong>Alguns sites nao sao compativeis com formatos mp3. Então é importante ter o audio em formato <i>wav e ogg</i>. Caso nao reproduzir nenhum desses formatos, colocar a disposição o arquivo para download usando a tag &lt;a&gt;</strong> </p>
+
+    
+</body>
+</html>

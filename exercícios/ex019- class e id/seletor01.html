@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="´t-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Personalizados</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <h1 id="principal">Criando Sites com HTML e CSS</h1>
+    <h1>Aprendendo HTML</h1>
+    <h2 class="basico">HTML Básico</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptate fugiat aliquam laboriosam delectus adipisci, nisi eos pariatur quisquam sit autem? Labore dolorem delectus excepturi natus laboriosam itaque libero inventore?</p>
+    <h2 class="intermediario">HTML Intermediário</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio cupiditate ex consequuntur repellat, totam molestiae quis. Sunt iure, cupiditate laborum suscipit quo illo odit adipisci officia corporis cum modi facilis.
+    </p>
+    <h2 class="avancado">HTML Avançado</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam inventore modi, atque doloremque, natus tempore quas harum nisi dolorum commodi corrupti praesentium ex sunt. Unde dolor tempora labore veniam nisi!</p>
+    <h1>Aprendendo CSS</h1>
+    <h2 class="basico">CSS Básico</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fugiat tenetur nemo blanditiis doloribus et, maiores aut commodi necessitatibus accusantium labore reiciendis ex voluptate obcaecati quo laborum dolores tempore cumque.</p>
+    <h2 class="intermediario">CSS Intermediário</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea fuga laborum et quaerat modi totam distinctio, deleniti dolorum quam placeat vero eius vitae dolore voluptate corporis nulla vel ex tempora.</p>
+    <h2 class="avancado destaque">CSS Avançado</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium repellendus sunt, necessitatibus delectus est illo libero magnam, ipsa, aspernatur dolor cum cupiditate repellat consequuntur. Eos deserunt obcaecati non repellendus eius!</p>
+    <hr>
+    <hr>
+
+    <h1 style="text-align: center;"> Anotaçoes </h1>
+    <p>
+        <li>a parâmetro <code>id""</code> é usado para designar um estilo CSS externo específico para uma tag.</li>
+        <li>Tudo o que usamos em HTML como <i>id</i> = em CSS é: <i><strong>#</strong></i></li>
+        <li>Tudo o que usamos em CSS como <i>class =</i> em CSS é: <strong>.</strong></li> 
+        <li>Segundo a W3schools, é permitido apenas um <i>id</i> por documento html.</li>
+        <li>É permitido dá varias <i>class</i> por elemento.</li>
+        <li>É permitido dá mais de uma <i>class</i> no mesmo elemento, exemplo: <code>&lt;h2 class="avancado destaque"&gt;.CSS Avançado&lt;/h2&gt;</code> (sem usar vírgula, apenas espaço).</li>
+    </p>
+    <p>
+        Exemplo código com <i>id</i> HTML E CSS:
+        <br><strong>No HTML</strong>: &lt;h1 id="principal"&gt;Criando Sites com HTML e CSS&lt;/h1&gt;
+        <br><strong>No CSS</strong>: <pre>
+            <code>
+                h1#principal{
+                    text-align: center;
+                    background-color:  rgb(74, 136, 115);
+                    color: white;}
+            </code>
+        </pre>
+        OBS: Neste exemplo aplicamos o nome de <code>id="principal"</code> ao h1 no HTML e aplicamos o estilo próprio para ele no CSS usando o chaveamento <code>h1#principal{}</code>. Texto centralizado, cor do fundo e cor da fonte (text-align, background-color e color)
+        <br>
+        <br>
+        <p>Exemplo código com <i>class</i>HTML e CSS:
+        <br> <strong>No HTML:</strong><code>&lt;h2 class="intermediario"&gt; CSS Intermediário&lt;/h2&gt;</code> <br><strong>No CSS:</strong><code>.<pre>
+            .intermediario{
+                color:  rgb(89, 95, 8);
+            }
+
+        </pre></code>
+        OBS: Neste exemplo aplicamos uma <i>class"intermediario"</i> no h2 pelo HTML e aplicamos o estilo no CSS usando o chaveamento <code>.intermediario{
+            color:  rgb(89, 95, 8);
+        }</code>
+        
+    </p>
+    </p>
+
+    
+    
+</body>
+</html>

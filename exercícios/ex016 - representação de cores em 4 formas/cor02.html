@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+       
+        body{
+            background-image: linear-gradient(to bottom, #6C33C2, #8C3AB6, #C2398B, #EB4B71, #FACB41);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+    <p>OBS: Parar criar gradientes selecionamos a tag &lt;style&gt; dentro da <i>head</i> e abrimos o seletor <i>body</i> adicionamos o parâmetro <code>background-image: linear-gradient</code> e selecionamos a paleta de cores dentro do (). To right (ir da direita pra esquerda), To left (ir da esquerda pra direita), To bottom (ir de baixo para cima), To top (ir de cima para baixo)</p>
+    <p>Para esse exemplo usamos: <pre>
+        <code>
+            body{
+                background-image: linear-gradient(to right, #6C33C2, #8C3AB6, #C2398B, #EB4B71, #FACB41);
+                background-attachment: fixed;
+            }
+        </code>
+    </pre></p>
+
+<p>ATENÇÃO! <pre>
+    <code>
+        *{
+                    }
+    </code>
+</pre>  Esse seletor se chama configuraçao global do CSS</p>
+</body>
+</html>

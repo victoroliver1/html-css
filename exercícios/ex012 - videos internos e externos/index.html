@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videos</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor,</p>
+   <video width="500" poster="imagens/buildings-647400_1280.jpg" controls loop>
+    <source src="midia/video.mp4" type="video/mp4">
+    <source src="midia/Video.mkv" type="video/mp4">
+    <source src="midia/Video.webm" type="video/webm">
+    <source src="midia/Video.ogv" type="video/ogg">
+   </video>
+   <p>Seu navegador não tem compatibilidade com reprodução dos vídeos(caso nao venha a reproduzir). </p>
+   <br>
+   <br>
+   <hr><h1 style="text-align: center;">ANOTAÇOES</h1>
+
+   <p>OBS: <strong>Para adicionar videos ao site, adicionamos a tag &lt;video&gt;, devido a incompatibilidade de alguns navegadores com videos e audios, devemos adcionar alguns</strong> <code>source:src</code> <strong>dentro da tag &lt;video&gt;. Usamos o parâmentro</strong> <code>width</code><strong> para definir o tamanho do vídeo, no exemplo acima utilizamos</strong> <code>width="500"</code> <strong>também utilizamos o parâmentro</strong> <code>controls</code> <strong>para aparecer o reprodutor na tela, e também utilizamos o parâmentro</strong> <code>poster</code><strong> para adicionar uma imagem pre-video(antes de ser reproduzido). Lembrando que também podemos utilizar o parâmentro <code>loop</code> para que o vídeo seja reproduzido de forma permanente.</strong></p>
+
+   <p>Neste caso o código ficou: <pre>
+       <code>
+           &lt;video width="500" poster="imagens/buildings-647400_1280.jpg" controls&gt;
+            &lt;source src="midia/video.mp4" type="video/mp4"&gt;
+            &lt;source src="midia/Video.mkv" type="video/mp4"&gt;
+            &lt;source src="midia/Video.webm" type="video/webm"&gt;
+            &lt;source src="midia/Video.ogv" type="video/ogg"&gt;
+           &lt;/video&gt;
+       </code>
+   </pre></p>
+
+   <p><strong>Reparamos que para cada tipo de arquivo existe um</strong> <code>type=""</code><strong>, vídeos MP4 E MKV utilizamos</strong> <code>type="video/mp4"</code><strong>, videos em WEBM, utilizamos</strong> <code>type="video/webm"</code> <strong>e vídeos em OGV utilizamos</strong> <code>type="video/ogg"</code>. </p>
+   <h1>Inserindo vídeos do YouTube ao meu site</h1>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/29mtSn1RdMQ?si=gSBjMVfVwVKjOM2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+   <p><strong>Entramos no YouTube, depois reproduzimos o vídeo e vamos em "Compartilhar>Incorporar", depois apertamos em "copiar" e apenas colamos o código no vscode.</strong> <img src="midia/Captura de tela 2025-03-14 145033.png" width="560 px" alt="tutorial"> </p>
+
+   <p><strong>Ao adicionar vídeos do youtube por ser um link externo, não consumimos a hospedagem do nosso site, diminuindo o custo para seu cliente.</strong></p>
+
+<h1>Inserindo vídeos do Vimeo</h1>
+
+<iframe src="https://player.vimeo.com/video/101632673?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Cristiano Ronaldo, Amazing Skills Show"></iframe>
+
+<p><strong>Seguindo a mesma risca do youtube, devemos ir em Compartilhar>Incorporar, copiamos o código e colamos no VScode</strong></p>
+</body>
+</html>

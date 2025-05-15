@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas </title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="1">
+        <li>Acordar</li>
+        <li>Ligar para Mirella</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para lo trabalho</li>
+        <li>Voltar para a casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+
+        <strong>
+            <p>OBS: Para fazer listas ordenadas utilizamos a tag &lt;OL&gt;, e a tag &lt;LI&gt; para cada item da lista. Dentro da tag &lt;OL&gt; podemos utilizar o parâmetro <code>type</code> que são: I, i, A, a, 1.... Para descrever a sequencia. Foi Utilizado esse código para o exemplo acima:</strong>    
+              <code>&lt;ul type= "1"&gt;</code>
+             </p>
+        
+    </ol>
+    <h2>Listas não Ordenadas</h2>
+    <ul type="circle">
+        <li>pão</li>
+        <li>leite</li>
+        <li>tomate</li>     
+        <li>manteiga</li>
+        <li>arroz</li>
+        <li>feijao</li>
+        <strong>
+            <p>OBS: Para fazer listas não ordenadas utilizamos a tag &lt;UL&gt;, e a tag &lt;LI&gt; para cada item da lista. Dentro da tag &lt;UL&gt; podemos utilizar o parâmetro <code>type</code> que são: square, circle e disc. Foi Utilizado esse código para o exemplo acima:</strong>
+            
+            <code>&lt;ul type= "circle"&gt;</code></p>
+        
+
+        
+    </ul>
+    <h2>Minhas linguagems favoritas</h2>
+    <ol>
+        <Li>Antigas</Li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Fortran</li>
+            <li>Visual Basic</li>
+            <li>Delphi</li>
+        </ol>
+
+        <li> Novas </li>
+        <ol type="a" start="5">
+            <li>PHP </li>
+            <li> Python </li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>            
+        </ol>        
+    </ol>
+
+    <STRONG>
+        <p>OBS:Podemos fazer sub itens dentro de itens. Abrindo outra tag &lt;ol/ul&gt; dentroA da tag &lt;li&gt;</p>
+    </STRONG>
+    
+    <h2>Meus jogos favoritos</h2>
+   <ol>
+    <li>PC</li>
+    <Ul type="square">
+        <li>FIFA</li>
+        <ul type="disc">
+            <li>2016</li>
+            <li>2017</li>
+            <li>2018</li>
+
+        </ul>
+        <LI>PES</LI>
+        <LI>CS GO</LI>
+    </Ul>
+    <li>Playstation2</li>
+    <UL type="square">
+        <LI>BLACK</LI>
+        <LI>BOMBA PATCH</LI>
+        <LI>TEKKEN</LI>
+    </UL>
+    
+        
+            <li><mark>Playstation1</mark></li>
+            <UL type="square">
+                <LI><mark>MEDAL OF HORNOR</mark></LI>
+                <ul type="disc">
+                    <li><mark>Modern fire</mark></li>
+                    <li><mark>Assault</mark></li>
+                </ul>
+                <LI><mark>WINNING ELEVEN</mark></LI>
+                <LI><mark>007</mark></LI>
+            </UL>
+        
+   </ol>
+
+   <P><strong>OBS:Também podemos misturar &lt;ul&gt; e &lt;ol&gt;, adicionando dentro da tag &lt;li&gt;, por exemplo no item <mark>grifado</mark> <i>Playstation1</i> foi digitado o código abaixo</strong>: <code>
+       <pre>
+           &lt;li&gt;Playstation1&lt;/li>
+            &lt;UL type="square">
+                &lt;li&gt;MEDAL OF HORNOR&lt;/li>
+                &lt;ul type="disc">
+                    &lt;li&gt;Modern fire&lt;/li>
+                    &lt;li&gt;Assault&lt;/li>
+                &lt;/ul>
+                &lt;li&gt;WINNING ELEVEN&lt;/li>
+                &lt;li&gt;007&lt;/li>
+            &lt;/ul>
+       </pre>
+   </code></P>
+   <h2>Lista de Definições</h2>
+   <dt><ins>HTML</dt>
+</ins>   <dd>Linguagem de marcação para criação do conteúdo de um site</dd>
+   <dt><ins>CSS</dt>
+ </ins>  <dd>Linguagem de marcação para a criação do design de um site</dd>
+   <dt><ins>JavaScript</ins></dt>
+   <dd>Linguagem de programação para a criação da interatividade de um site</dd>
+
+   <strong>
+       <p>OBS:Para adicionar listas de Definições basta adicionar a tag &lt;dt&gt; para o TERMO e a tag &lt;dd&gt; para a descrição.</p>
+   </strong>
+
+</body>
+</html>
