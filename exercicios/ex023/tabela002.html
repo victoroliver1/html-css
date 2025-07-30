@@ -27,12 +27,24 @@
         td.num{
             text-align: right;
         }
+
+        caption{
+            font-size: 1.5em;
+            background-color: lightgray;
+            font-weight: bolder ;
+            padding: 10px;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: lightgrey;
+        }
     </style>
 </head>
 <body>
     <h1>Uso de Tabelas Grandes</h1>
     <!--
     ANATOMIA PARA TABELAS GRANDES
+    CAPTION
     TABLE
          THEAD
             TR, TD, TH
@@ -46,6 +58,7 @@
     -->
 
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
                 <th>Estado</th>
